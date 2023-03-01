@@ -1,0 +1,38 @@
+.hicoo-sheet-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.hicoo-sheet-mark_showed {
+  opacity: 1;
+}
+
+.hicoo-sheet-context {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 500px;
+  background-color: #fff;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
+}
+
+.hicoo-sheet-icon {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  width: 44px;
+  height: 44px;
+}
+
+.hicoo-sheet-context_showed {
+  transform: translateY(0);
+}
