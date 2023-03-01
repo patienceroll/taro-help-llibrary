@@ -1,0 +1,33 @@
+.hicoo-text-skeleton {
+  display: inline-block;
+  min-width: 200px;
+  height: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+}
+
+@keyframes flush {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hicoo-text-skeleton-waving {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 200px;
+  height: inherit;
+  line-height: inherit;
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  animation-name: flush;
+  animation-duration: 2000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
